@@ -30,3 +30,7 @@ rtl8169_poll -> napi_complete -> napi_gro_flush -> napi_gro_complete ->
       __netif_receive_skb -> deliver_skb-> ip_packet_type -> ip_rcv
 ip_rcv_finish (struct sk_buff *skb)
 eth_header (struct sk_buff *skb)
+skb_dst_set, dev_set_promiscuity, packet_setsockopt
+__netpoll_rxm
+__netif_receive_skb -> deliver_skb -> ip_packet_type -> ip_rcv
+rtl8169_rx_interrupt -> napi_gro_receive
