@@ -34,3 +34,4 @@ skb_dst_set, dev_set_promiscuity, packet_setsockopt
 __netpoll_rxm
 __netif_receive_skb -> deliver_skb -> ip_packet_type -> ip_rcv
 rtl8169_rx_interrupt -> napi_gro_receive
+igmp_heard_query
