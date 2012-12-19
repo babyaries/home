@@ -6,3 +6,10 @@ flush_old_exec
 exec_mmap -> mmdrop -> find_vma
 create_elf_tables
 sys_exec -> search_binary_handler -> load_elf_binary -> start_thread
+get_page_from_freelist -> buffered_rmqueue
+node_zonelist
+init_bootmem
+mem_init
+zone_sizes_init
+free_area_init_nodes contig_page_data
+alloc_node_mem_map
