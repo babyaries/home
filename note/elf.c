@@ -12,4 +12,5 @@ init_bootmem
 mem_init
 zone_sizes_init
 free_area_init_nodes contig_page_data
-alloc_node_mem_map
+alloc_node_mem_map, __alloc_bootmem_node_nopanic, (slub) kzalloc_node, memblock_find_region
+在__alloc_memory_core_early中已经用了phys_to_virt
